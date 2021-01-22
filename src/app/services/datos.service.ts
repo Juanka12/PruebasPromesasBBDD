@@ -38,9 +38,10 @@ export class DatosService {
       this.db
         .executeSql(sqlSentence, searchParam)
         .then((data) => {
-          for(let i=0;data.rows.length;i++){
+          for(let i=0;i < data.rows.length;i++){
             let obj=data.rows.item(i);
             target.push(obj);
+            console.log(obj);
           }
           resolve("Sentencia ejecutada");
         })

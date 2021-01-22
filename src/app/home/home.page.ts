@@ -1,5 +1,5 @@
-import { DatosService } from './../datos.service';
-import { CopiaService } from './../copia.service';
+import { DatosService } from '../services/datos.service';
+import { CopiaService } from '../services/copia.service';
 import { Component, OnInit } from "@angular/core";
 
 @Component({
